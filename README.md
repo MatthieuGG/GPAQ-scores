@@ -1,6 +1,9 @@
 # How to obtain MET-min/week using GPAQ scores
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10086826.svg)](https://doi.org/10.5281/zenodo.10086826)
+
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13895456.svg)](https://doi.org/10.5281/zenodo.13895456)
+
 
 You can call the function in a terminal using ```python3 gpaq.py [-d input_path] [-o output_path] [--ind]```  
 
