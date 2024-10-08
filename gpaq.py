@@ -119,7 +119,7 @@ def check_data_integrity(data_dict):
     Returns:
         set: A set of DataFrame names that have integrity issues.
     """
-    print("Check data integrity...")
+    print("Checking data integrity...")
 
     names_list = []
 
@@ -252,7 +252,7 @@ def MET_min_calculation(data_dict, names_with_issues):
         data_dict (dict): A dictionary containing DataFrames keyed by their file names.
         names_with_issues (list): A list of DataFrame names that have integrity issues.
     """
-    print("Calculating MET/minutes...")
+    print("Calculating MET-minutes/week...")
     for key, df in data_dict.items():
         if key in names_with_issues:  # Skip this DataFrame if it has issues
             print(f"Skipping {key} due to integrity issues.")
@@ -300,7 +300,7 @@ def save_data(data_dict, saving_path_ind, save_independent):
 def main():
     start_time = time.time()
 
-    install_requirements()
+    # install_requirements()
 
     default_data_path = "./data"
     default_results_path = "./results"
@@ -323,7 +323,7 @@ def main():
     )
     # Precise if you want individual results (default = 1 concatenated file)
     parser.add_argument(
-        "--ind", 
+        "-ind", 
         action="store_true", 
         help="Save independent files"
     )
