@@ -15,7 +15,7 @@ You first have to go in the folder where gpaq.py is located using `cd`. Exemple 
 > cd /Users/Me/Downloads/GPAQ-scores-main/  
 > python3 gpaq.py -d /Users/Me/Documents/gpaq/myData/ -o /Users/Me/Documents/gpaq/myResults/ -ind
 ```
-See more information in the [documentation]() *(not yet edited)*. We also provide an exemple file [here](https://github.com/MatthieuGG/GPAQ-scores/tree/main/sample.pdf). We based our calculation on the [GPAQ guides](https://www.who.int/docs/default-source/ncds/ncd-surveillance/gpaq-analysis-guide.pdf) and [ONAPS recommandations](https://onaps.fr/wp-content/uploads/2020/10/Interpre%CC%81tation-GPAQ.pdf).
+See more information in the [documentation](https://github.com/MatthieuGG/GPAQ-scores/tree/main/documentation.pdf). We also provide an exemple file [here](https://github.com/MatthieuGG/GPAQ-scores/tree/main/sample.pdf). We based our calculation on the [GPAQ guides](https://www.who.int/docs/default-source/ncds/ncd-surveillance/gpaq-analysis-guide.pdf) and [ONAPS recommandations](https://onaps.fr/wp-content/uploads/2020/10/Interpre%CC%81tation-GPAQ.pdf).
 
 **To cite this work:**
 > Matthieu Gallou-Guyot. (2023). GPAQ-scores. Zenodo. https://doi.org/10.5281/zenodo.10060405  
