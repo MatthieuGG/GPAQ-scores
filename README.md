@@ -13,6 +13,7 @@ You first have to go in the folder where gpaq.py is located using `cd`. Exemple 
 
 ```shell
 cd /Users/Me/Downloads/GPAQ-scores-main/
+
 python3 gpaq.py -d /Users/Me/Documents/gpaq/myData/ -o /Users/Me/Documents/gpaq/myResults/ -ind
 ```
 

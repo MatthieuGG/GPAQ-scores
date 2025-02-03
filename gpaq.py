@@ -6,6 +6,11 @@ import argparse
 import time
 import subprocess
 import sys
+from tqdm import tqdm
+
+VERSION = "1.2.2"
+AUTHOR = "Matthieu Gallou-Guyot"
+CONTACT = "matthieu.gallou.guyot@gmail.com"
 
 def print_warning(message):
     """Prints a warning message in yellow"""
@@ -298,6 +303,13 @@ def save_data(data_dict, saving_path_ind, save_independent):
         print(f"Saved concatenated file: {concatenated_filename}")
 
 def main():
+
+    print("=" * 50)
+    print(f"GPAQ Scoring - Version {VERSION}")
+    # print(f"Author : {AUTHOR}")
+    print(f"Contact : {CONTACT}")
+    print("=" * 50)
+
     start_time = time.time()
 
     # install_requirements()
@@ -305,7 +317,7 @@ def main():
     default_data_path = "./data"
     default_results_path = "./results"
 
-    parser = argparse.ArgumentParser(description="Import CSV files from a directory.")
+    parser = argparse.ArgumentParser(description="Import CSV files from a directory, calculates GPAQ scores, and save results as CSV in a directory.")
 
     # Precise input directory (default = ./data)
     parser.add_argument(
@@ -327,6 +339,14 @@ def main():
         action="store_true", 
         help="Save independent files"
     )
+
+    # help
+    parser.add_argument(
+        "--version", 
+        action="version", 
+        version=f"GPAQ Scoring v{VERSION} - {AUTHOR}",
+        help="Show program's information"
+        )
 
     args = parser.parse_args()
 
